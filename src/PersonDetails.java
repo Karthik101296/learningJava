@@ -44,7 +44,7 @@ public class PersonDetails {
         // Using object methods
         person1.speak(); // Outputs: my name is John Doe and my age is 25.
         person1.walk(); // Outputs: John Doe is walking.
-        person1.setName("Trio");
+        //person1.setName("Trio");
         person1.call(); // Outputs: Trio is calling...
     }
 }
