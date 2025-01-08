@@ -9,5 +9,14 @@ public class LibrarySystem {
 
         FacultyMember faculty = new FacultyMember("F001", "Dr. Smith", "Computer Science");
         faculty.borrowBook(); // Calls overridden borrowBook method in FacultyMember
+
+        System.out.println("================");
+        
+        LibraryMember1 member = new LibraryMember1("L001", "Jhon");
+        member.borrowItem("Introduction to Java Programming");
+        member.returnItem("Introduction to Java Programming");
+
+        LibraryMember1 member1 = new LibraryMember1("L002", "Ram");
+        member1.borrowItem("Introduction to Java Programming");
     }
 }
