@@ -26,4 +26,19 @@ public class LibraryMember {
     public String getName() {
         return name;
     }
+
+    // Overloaded methods for borrowing items
+    public void borrowItem(String item) {
+        System.out.println(name + " borrowed " + item);
+    }
+
+    public void borrowItem(String item, int duration) {
+        System.out.println(name + " borrowed " + item + " for " + duration
+                + " days.");
+    }
+
+    public void borrowItem(String item, int duration, String librarian) {
+        System.out.println(name + " borrowed " + item + " for " + duration
+                + " days, approved by " + librarian);
+    }
 }

@@ -18,5 +18,12 @@ public class LibrarySystem {
 
         LibraryMember1 member1 = new LibraryMember1("L002", "Ram");
         member1.borrowItem("Introduction to Java Programming");
+
+        System.out.println("===Polymorphism===");
+
+        LibraryMember member2 = new LibraryMember("L001", "Alice");
+        member2.borrowItem("Java Programming");
+        member2.borrowItem("Python Programming", 14);
+        member2.borrowItem("C++ Programing", 7, "Mr. Smith");
     }
 }

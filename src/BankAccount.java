@@ -17,6 +17,15 @@ public class BankAccount {
         System.out.println("Withdraw: " + amount);
     }
 
+    public void withdraw1(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdraw: " + amount);
+        } else {
+            System.out.println("Insufficient balance.");
+        }
+    }
+
     public double getBalance() {
         return balance;
     }
